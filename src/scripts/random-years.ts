@@ -30,7 +30,7 @@ const renderRandomYear = (event: Event) => {
   const yearOfBirth = Number(
     selectElement.options[selectElement.selectedIndex].value,
   );
-  const randomYear = getRandomYear(yearOfBirth);
+  const randomYear = getRandomYear(yearOfBirth + 12);
   const randomYearText = document.createTextNode(String(randomYear));
   paragraphElement.appendChild(randomYearText);
 };

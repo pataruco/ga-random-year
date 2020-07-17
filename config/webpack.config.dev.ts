@@ -35,6 +35,11 @@ const config: webpack.Configuration = {
       filename: 'index.html',
       template: 'src/index.html',
     }),
+    new HtmlWebpackPlugin({
+      title: 'GA año aleatorio',
+      filename: 'es/index.html',
+      template: 'src/es/index.html',
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[name].css',
