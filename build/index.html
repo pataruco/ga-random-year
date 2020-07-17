@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GA random year picker</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/assets/favicon-48x48.png"
+    />
+    <link href="main.css" rel="stylesheet" />
   </head>
-  <body class="page random-year es">
+  <body class="page random-year">
     <header>
-      <picture>
-        <svg
+      <picture
+        ><svg
           xmlns:dc="http://purl.org/dc/elements/1.1/"
           xmlns:cc="http://creativecommons.org/ns#"
           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -255,22 +275,20 @@
                 </g>
               </g>
             </g>
-          </g>
-        </svg>
-      </picture>
+          </g></svg
+      ></picture>
     </header>
     <main>
-      <h1>
-        Año aleatorio
-      </h1>
+      <h1>Random year picker</h1>
       <section>
         <form action="/" id="js-form">
-          <label for="years">Selecciona tu año de nacimiento</label>
-          <select name="years" id="years"> </select>
+          <label for="years">Select your year of birth</label>
+          <select name="years" id="years"></select>
           <input type="submit" value="Enter" />
         </form>
       </section>
       <p id="js-random-year" class="random-year__display"></p>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

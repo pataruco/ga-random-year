@@ -3,10 +3,6 @@
   margin: 0 auto;
 }
 
-.random-year h1 {
-  text-align: center;
-}
-
 .random-year input,
 .random-year label,
 .random-year select {
