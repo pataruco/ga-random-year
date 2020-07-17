@@ -1,3 +1,3 @@
 import 'normalize.css';
-
-console.log('hola');
+import './index.css';
+import './scripts/random-years';
