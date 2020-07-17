@@ -12,6 +12,12 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Set Node version
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14'
+          check-latest: true
+
       - name: Install and Build 🔧
         run: |
           yarn 
